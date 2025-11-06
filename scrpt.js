@@ -6,7 +6,7 @@ const menuAwal = [
         nama: "Tteokbokki",
         harga: 35000,
         deskripsi: "Rice cake dengan saus gochugaru pedas manis",
-        foto: "https://i.ibb.co.com/h1ZGc4kQ/tteokbokki-1.webp"
+        foto: "https://www.simplyrecipes.com/thmb/IvPLqcH3rQaF5jNfMktA8FToNew=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Tteokbokki-LEAD-9d-63d62a9c129a48feb3427a9eb48799a7.jpg"
     },
     {
         id: Date.now() + 1,
@@ -164,4 +164,5 @@ function ubahJumlah(id, delta) {
 
 document.addEventListener('DOMContentLoaded', function() {
     renderMenu();
+
 });
