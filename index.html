@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-pink-50 min-h-screen">
+    <div class="container mx-auto p-4">
+        <h1 class="text-pink-600 text-2xl font-bold text-center mb-6">Mini Resto App</h1>
+        <!--Form Tambah Menu-->
+        <div class="bg-pink-100 p-4 rounded shadow mb-6">
+            <h2 class="text-center font-semibold mb-4 text-pink-700">Tambah Menu Makanan</h2>
+            <form id="formMenu" class="grid gap-4">
+                <input type="text" id="nama" placeholder="Nama" class="border p-2 rounded w-full"/>
+                <input type="number" id="harga" placeholder="Harga" class="border p-2 rounded w-full"/>
+                <textarea id="deskripsi" placeholder="Deskripsi" class="border p-2 rounded w-full"></textarea>
+                <input type="text" id="foto" placeholder="Foto" class="border p-2 rounded w-full"/>
+                <button class="bg-pink-400 text-white rounded hover:bg-pink-600">Simpan Menu</button>
+            </form>
+        </div>
+
+        <!--Daftar Menu-->
+        <div>
+            <h2 class="text-lg font-semibold mb-2">Daftar Menu</h2>
+            <div id="menuList" class="grid md:grid-cols-3"></div>
+        </div>
+
+        <!--pesanan-->
+        <div class="mt-8 bg-white p-4 rounded shadow">
+            <h2 class="text-lg font-semibold mb-4 text-pink-700">Daftar Pesanan</h2>
+            <ul id="orderList" class="divide-y divide-gray-200"></ul>
+            <p id="totalHarga" class="font-bold mt-3 text-right"></p>
+        </div>
+    </div>
+    <script src="./scrpt.js"></script>
+</body>
+</html>
